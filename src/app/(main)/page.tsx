@@ -16,7 +16,6 @@ export default async function Home() {
 
   return (
     <>
-      {/* <Hero /> */}
       <Suspense fallback={<SkeletonHomepageProducts count={count} />}>
         <FeaturedProducts collections={collections} />
       </Suspense>

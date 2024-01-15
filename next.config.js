@@ -10,6 +10,7 @@ module.exports = withStoreConfig({
   },
   features: store.features,
   reactStrictMode: true,
+  FEATURE_SEARCH_ENABLED: "true",
   images: {
     remotePatterns: [
       {
