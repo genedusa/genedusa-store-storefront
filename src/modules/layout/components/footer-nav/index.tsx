@@ -28,7 +28,7 @@ const FooterNav = () => {
               ["Services", "https://www.genedusa.com/services"],
               ["Enroll", "https://www.genedusa.com/enroll"],
             ].map(([name, href]) => (
-              <div>
+              <div key={`${name}_${href}`}>
                 <Link
                   href={href}
                   className="txt-compact-medium-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase"
