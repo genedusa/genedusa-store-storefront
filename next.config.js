@@ -10,7 +10,7 @@ module.exports = withStoreConfig({
   },
   features: store.features,
   reactStrictMode: true,
-  FEATURE_SEARCH_ENABLED: "true",
+  FEATURE_SEARCH_ENABLED: "false",
   images: {
     remotePatterns: [
       {
@@ -28,6 +28,16 @@ module.exports = withStoreConfig({
       {
         protocol: "https",
         hostname: "medusa-server-testing.s3.us-east-1.amazonaws.com",
+      },
+    ],
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "admin.genedusa.com",
+        port: "",
+        // pathname: "/account123/**",
       },
     ],
   },
